@@ -15,7 +15,7 @@ Chatbot.init({
       iconColor: 'white',
       customIconSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
       autoWindowOpen: {
-        autoOpen: true,
+        autoOpen: false,
         openDelay: 2,
         autoOpenOnMobile: false
       }
@@ -43,13 +43,13 @@ Chatbot.init({
       title: 'Flowise Bot',
       titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
       welcomeMessage: 'Olá, eu sou a Nina, sua Assistente Virtual',
-      errorMessage: 'Algo deu errado. Tente novamente',
+      errorMessage: 'Algo deu errado. Tente novamente mais tarde!',
       backgroundColor: '#ffffff',
       height: 700,
       width: 400,
       fontSize: 16,
       starterPrompts: [
-        "O que você pode fazer?",
+        "No que você pode me ajudar?",
         "Quem é você?"
       ],
       botMessage: {
@@ -69,7 +69,7 @@ Chatbot.init({
         backgroundColor: '#ffffff',
         textColor: '#303235',
         sendButtonColor: '#3B81F6',
-        maxChars: 50,
+        maxChars: 100,
         maxCharsWarningMessage: 'Você excedeu o limite de caracteres.',
         autoFocus: true
       },
@@ -82,6 +82,7 @@ Chatbot.init({
     }
   }
 })
+
 
 
 
