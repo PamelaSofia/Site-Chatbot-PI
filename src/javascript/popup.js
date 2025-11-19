@@ -2,7 +2,7 @@
 import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
 
 Chatbot.init({
-  chatflowid: "c8af6340-b6de-4d0d-84fb-3d185af79645",
+  chatflowid: "c7974f47-6406-44fc-b155-79b39f700662",
   apiHost: "https://flowise-chatbot-9q7s.onrender.com",
 
   theme: {
@@ -82,4 +82,5 @@ Chatbot.init({
     }
   }
 })
+
 
