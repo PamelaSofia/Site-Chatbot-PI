@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot - Estética da Imagem</title>
+    <link rel="stylesheet" href="flow.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- <h1>NINABOT</h1> -->
+            <h2>O que gostaria de saber sobre tecnologia?</h2>
+        </div>
+        
+        <div class="chat-container">
+            <div class="flowise-chatbot">
+                <!-- O chatbot Flowise será inserido aqui -->
+                <flowise-fullchatbot></flowise-fullchatbot>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script do Flowise -->
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.initFull({
+            chatflowid: "",
+            apiHost: "https://flowise-chatbot-9q7s.onrender.com",
+            chatflowConfig: {
+                /* Chatflow Config */
+            },
+            observersConfig: {
+                /* Observers Config */
+            },
+            theme: {
+                button: {
+                    backgroundColor: '#000', /*cabeçalho atualizar 3B81F6*/
+                    right: 20,
+                    bottom: 20,
+                    size: 48,
+                    dragAndDrop: true,
+                    iconColor: '#fff',
+                    customIconSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+                    autoWindowOpen: {
+                        autoOpen: true,
+                        openDelay: 2,
+                        autoOpenOnMobile: false
+                    }
+                },
+                customCSS:``,
+                chatWindow: {
+                    showTitle: true,
+                    showAgentMessages: true,
+                    title: 'NinaBot',
+                    /*titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',*/
+                    welcomeMessage: 'Olá, como posso te ajudar hoje?',
+                    errorMessage: 'Esta é uma mensagem de erro',
+                    backgroundColor: '#414040 ', /*parte de cima do chat 595858 */
+                    backgroundImage: 'enter image path or link',
+                    height: '100%',
+                    width: '100%',
+                    fontSize: 16,
+                    starterPrompts: [
+                        "O que é um bot?",
+                        "O que você faz?"
+                    ],
+                    starterPromptFontSize: 15,
+                    clearChatOnReload: false,
+                    sourceDocsTitle: 'Sources:',
+                    renderHTML: true,
+                    botMessage: {
+                        backgroundColor: '##f7f8ff', /*mensagem nina*/
+                        textColor: '#000',
+                        showAvatar: true,
+                        /*avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png'*/
+                        /*avatarSrc: 'https://raw.githubusercontent.com/PamelaSofia/Site-Chatbot-PI/main/robo_ninabot.png'*/
+                        avatarSrc: 'https://raw.githubusercontent.com/PamelaSofia/Site-Chatbot-PI/main/ninabot_avatar.png'
+                    },
+                    userMessage: {
+                        backgroundColor: '##f7f8ff', /*mensagem usuário*/
+                        textColor: '#000',
+                        showAvatar: true,
+                        avatarSrc: 'https://raw.githubusercontent.com/PamelaSofia/Site-Chatbot-PI/main/user_icon.png'
+                    },
+                    textInput: {
+                        placeholder: 'Digite sua pergunta',
+                        backgroundColor: '##f7f8ff', /*digitar mensagem*/
+                        textColor: '#000',
+                        sendButtonColor: '#000', /*botão 3B81F6 */
+                        maxChars: 50,
+                        maxCharsWarningMessage: 'Você atingiu o limite de caracteres permitidos. Por favor escreva menos de 50 caracteres',
+                        autoFocus: true,
+                        sendMessageSound: true,
+                        sendSoundLocation: 'send_message.mp3',
+                        receiveMessageSound: true,
+                        receiveSoundLocation: 'receive_message.mp3',
+                        height: '1000px'
+                    },
+                    feedback: {
+                        color: '#303235'
+                    },
+                    dateTimeToggle: {
+                        date: true,
+                        time: true
+                    },
+                    footer: {
+                        textColor: '#000',/*303235*/
+                        text: 'Powered by',
+                        company: 'A Locomotiva',
+                        companyLink: 'https://flowiseai.com',
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>
