@@ -1,20 +1,20 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #0a0a0a;
-  color: #ffffff;
+  background-color: #121212;
+  color: white;
   overflow-x: hidden;
 }
 
 header {
-  background-color: #000;
+  background-color: #121212;
   color: white;
   text-align: center;
-  padding: 25px 0;
-  font-size: 26px;
+  padding: 25px 0 20px 0;
+  font-size: 30px;
   font-weight: bold;
   letter-spacing: 3px;
-  border-bottom: 1px solid pink;
+  border-bottom: 1px solid #1a3b8f;
   animation: fadeDown 1s ease-out;
 }
 
@@ -27,7 +27,7 @@ section {
 }
 
 h2 {
-  color: #1a3b8f;
+  color: #2c5be6;
   font-size: 30px;
   margin-bottom: 20px;
   animation: slideUp 1.2s ease-out;
@@ -36,7 +36,7 @@ h2 {
 p {
   font-size: 18px;
   line-height: 1.6;
-  color: #d9d9d9;
+  color: whitesmoke;
   animation: fadeInText 1.5s ease-in;
 }
 
@@ -49,7 +49,7 @@ p {
 }
 
 .card {
-  background-color: #121212;
+  background-color: black;
   border: 1px solid #1a3b8f;
   border-radius: 15px;
   width: 260px;
@@ -94,7 +94,7 @@ p {
 }
 
 footer {
-  background-color: #000;
+  background-color: #121212;
   text-align: center;
   padding: 20px;
   border-top: 1px solid #1a3b8f;
@@ -134,3 +134,4 @@ footer {
   0% { transform: scale(0.9); opacity: 0; }
   100% { transform: scale(1); opacity: 1; }
 }
+
