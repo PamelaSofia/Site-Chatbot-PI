@@ -30,7 +30,11 @@ body {
     background: #000; /*cabeçalho 333333 */
     color: white;
     padding: 20px 30px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    gap: 15px;
 }
 
 .header h1 {
@@ -38,6 +42,16 @@ body {
     font-weight: 700;
     margin-bottom: 8px;
     letter-spacing: 1px;
+}
+
+.arrow-btn {
+    position: absolute;
+    left: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px; /* aumenta o tamanho do ícone */
+    color: white;
 }
 
 .header p {
@@ -156,3 +170,4 @@ body {
         font-size: 14px;
     }
 }
+
