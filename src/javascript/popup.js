@@ -1,6 +1,9 @@
 // js/popup.js
 import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 Chatbot.init({
   chatflowid: "c7974f47-6406-44fc-b155-79b39f700662",
   apiHost: "https://flowise-chatbot-9q7s.onrender.com",
@@ -40,7 +43,7 @@ Chatbot.init({
     chatWindow: {
       showTitle: true,
       showAgentMessages: true,
-      title: 'Flowise Bot',
+      title: 'NinaBot',
       titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
       welcomeMessage: 'Olá, eu sou a Nina, sua Assistente Virtual',
       errorMessage: 'Algo deu errado. Tente novamente mais tarde!',
@@ -56,13 +59,13 @@ Chatbot.init({
         backgroundColor: '#f7f8ff',
         textColor: '#303235',
         showAvatar: true,
-        avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png'
+        avatarSrc: 'https://raw.githubusercontent.com/PamelaSofia/Site-Chatbot-PI/main/ninabot_avatar.png'
       },
       userMessage: {
         backgroundColor: '#3B81F6',
         textColor: '#ffffff',
         showAvatar: true,
-        avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png'
+        avatarSrc: 'https://raw.githubusercontent.com/PamelaSofia/Site-Chatbot-PI/main/user_icon.png'
       },
       textInput: {
         placeholder: 'Me faça uma pergunta',
@@ -82,6 +85,7 @@ Chatbot.init({
     }
   }
 })
+
 
 
 
