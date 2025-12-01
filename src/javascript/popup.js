@@ -1,9 +1,6 @@
 // js/popup.js
 import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
 Chatbot.init({
   chatflowid: "c7974f47-6406-44fc-b155-79b39f700662",
   apiHost: "https://flowise-chatbot-9q7s.onrender.com",
@@ -85,6 +82,7 @@ Chatbot.init({
     }
   }
 })
+
 
 
 
