@@ -62,7 +62,7 @@ Chatbot.init({
         backgroundColor: '#3B81F6',
         textColor: '#ffffff',
         showAvatar: true,
-        avatarSrc: 'https://raw.githubusercontent.com/PamelaSofia/Site-Chatbot-PI/main/user_icon.png'
+        avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png'
       },
       textInput: {
         placeholder: 'Me faça uma pergunta',
@@ -82,6 +82,7 @@ Chatbot.init({
     }
   }
 })
+
 
 
 
