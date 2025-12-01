@@ -7,13 +7,13 @@ Chatbot.init({
 
   theme: {
     button: {
-      backgroundColor: '#3B81F6',
+      backgroundColor: '#2c5be6',
       right: 20,
       bottom: 20,
       size: 48,
       dragAndDrop: true,
       iconColor: 'white',
-      customIconSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+      customIconSrc: 'https://raw.githubusercontent.com/PamelaSofia/Site-Chatbot-PI/main/ninabot_avatar.png',
       autoWindowOpen: {
         autoOpen: false,
         openDelay: 2,
@@ -41,10 +41,10 @@ Chatbot.init({
       showTitle: true,
       showAgentMessages: true,
       title: 'NinaBot',
-      titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+      titleAvatarSrc: 'https://raw.githubusercontent.com/PamelaSofia/Site-Chatbot-PI/main/ninabot_avatar.png',
       welcomeMessage: 'Olá, eu sou a Nina, sua Assistente Virtual',
       errorMessage: 'Ocorreu um erro, tente novamente mais tarde',
-      backgroundColor: '#ffffff',
+      backgroundColor: '#414040',
       height: 700,
       width: 400,
       fontSize: 16,
@@ -53,28 +53,28 @@ Chatbot.init({
         "O  que você pode fazer?"
       ],
       botMessage: {
-        backgroundColor: '#f7f8ff',
-        textColor: '#303235',
+        backgroundColor: '#f5f5f5',
+        textColor: '#000',
         showAvatar: true,
         avatarSrc: 'https://raw.githubusercontent.com/PamelaSofia/Site-Chatbot-PI/main/ninabot_avatar.png'
       },
       userMessage: {
-        backgroundColor: '#3B81F6',
-        textColor: '#ffffff',
+        backgroundColor: '#2c5be6',
+        textColor: '#f5f5f5',
         showAvatar: true,
         avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png'
       },
       textInput: {
         placeholder: 'Me faça uma pergunta',
-        backgroundColor: '#ffffff',
-        textColor: '#303235',
-        sendButtonColor: '#3B81F6',
+        backgroundColor: '#f5f5f5',
+        textColor: '#000',
+        sendButtonColor: '#000',
         maxChars: 100,
         maxCharsWarningMessage: 'Você excedeu o limite de caracteres.',
         autoFocus: true
       },
       footer: {
-        textColor: '#303235',
+        textColor: '#000',
         text: 'Desenvolvido por ',
         company: 'A Locomotiva',
         companyLink: 'https://github.com/PamelaSofia/PI_8-sem'
@@ -82,6 +82,7 @@ Chatbot.init({
     }
   }
 })
+
 
 
 
