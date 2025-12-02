@@ -7,12 +7,12 @@ Chatbot.init({
 
   theme: {
     button: {
-      backgroundColor: '#2c5be6',
+      backgroundColor: '#1c3b97ff',
       right: 20,
       bottom: 20,
       size: 48,
       dragAndDrop: true,
-      iconColor: 'white',
+      iconColor: 'black',
       customIconSrc: 'https://raw.githubusercontent.com/PamelaSofia/Site-Chatbot-PI/main/ninabot_avatar.png',
       autoWindowOpen: {
         autoOpen: false,
@@ -44,9 +44,9 @@ Chatbot.init({
       titleAvatarSrc: 'https://raw.githubusercontent.com/PamelaSofia/Site-Chatbot-PI/main/ninabot_avatar.png',
       welcomeMessage: 'Olá, eu sou a Nina, sua Assistente Virtual',
       errorMessage: 'Ocorreu um erro, tente novamente mais tarde',
-      backgroundColor: '#414040',
-      height: 700,
-      width: 400,
+      backgroundColor: '#333333',
+      height: Math.min(700, window.innerHeight * 0.8), 
+      width: Math.min(400, window.innerWidth * 0.9), 
       fontSize: 16,
       starterPrompts: [
         "Quem é você?",
@@ -82,6 +82,7 @@ Chatbot.init({
     }
   }
 })
+
 
 
 
