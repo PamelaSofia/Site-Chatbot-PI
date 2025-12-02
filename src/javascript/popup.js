@@ -77,11 +77,12 @@ Chatbot.init({
         textColor: '#000',
         text: 'Desenvolvido por ',
         company: 'A Locomotiva',
-        companyLink: 'https://github.com/PamelaSofia/PI_8-sem'
+        companyLink: 'https://github.com/PamelaSofia/Site-Chatbot-PI/tree/main'
       }
     }
   }
 })
+
 
 
 
