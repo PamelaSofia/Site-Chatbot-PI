@@ -69,7 +69,7 @@ Chatbot.init({
         backgroundColor: '#f5f5f5',
         textColor: '#000',
         sendButtonColor: '#000',
-        maxChars: 100,
+        maxChars: 200,
         maxCharsWarningMessage: 'Você excedeu o limite de caracteres.',
         autoFocus: true
       },
@@ -82,6 +82,7 @@ Chatbot.init({
     }
   }
 })
+
 
 
 
